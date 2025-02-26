@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text to Braille</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Text to Braille</h1>
+        <textarea id="inputText" placeholder="Type your message here..."></textarea>
+        <div>
+            <label><input type="radio" name="brailleMode" value="contracted" checked> Contracted</label>
+            <label><input type="radio" name="brailleMode" value="uncontracted"> Uncontracted</label>
+        </div>
+        <p>UEB rules are used&#46; Contracted Braille is not complete and will not follow all Braille rules&#46;</p>
+        <div class="output" id="brailleOutput"></div>
+        <button id="copyBtn" class="copy-btn">Copy to Clipboard</button>
+        <script src="main.js"></script>
+    </body>
+</html>
